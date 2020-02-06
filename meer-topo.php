@@ -39,7 +39,7 @@ $quiz = array(
 
 // echo "Je hebt " . $g . " van de  " . count($quiz) . "  goed geraden" . PHP_EOL;
 // exit;
-
+$database = [];
 
 echo ("Hoeveel landen wil je toevoegen?" . PHP_EOL);
 $gets = readline("");
@@ -50,6 +50,7 @@ for ($i = 0; $i < $gets; $i++) {
     $tland = readline("");
     echo ("wat is de hoofdstad van $tland?" . PHP_EOL);
     $thoofdstad = readline("");
+
     $database[$tland] = $thoofdstad;
 }
 
@@ -60,3 +61,11 @@ foreach ($database as $kseya => $valuea) {
 
     echo $kseya . "," . $valuea . PHP_EOL;
 }
+
+// foreach ($database as $nname => $valss) {
+
+
+//     echo $nname . "," . $valss . PHP_EOL;
+// }
+
+print_r($database);
