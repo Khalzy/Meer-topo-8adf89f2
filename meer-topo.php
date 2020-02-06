@@ -53,10 +53,10 @@ for ($i = 0; $i < $gets; $i++) {
     $database[$tland] = $thoofdstad;
 }
 
-
+echo ("De Volgende landen en steden zitten in de database?" . PHP_EOL);
 
 foreach ($database as $kseya => $valuea) {
-    echo ("De Volgende landen en steden zitten in de database?" . PHP_EOL);
 
-    echo $kseya . "," . $valuea;
+
+    echo $kseya . "," . $valuea . PHP_EOL;
 }
